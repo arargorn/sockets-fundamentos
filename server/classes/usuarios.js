@@ -20,7 +20,8 @@ class Usuarios {
 
     borrarPersona(id) {
         let personaBorrada = this.getPersona(id);
-        this.personas = this.personas.filter(p => p.id != id);
+        this.personas = this.personas.filter(p => p.id !== id);
+        console.log(this.personas);
         return personaBorrada;
     }
 }
